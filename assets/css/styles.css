@@ -1,0 +1,15 @@
+* {
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+nav {
+	width: 50%;
+	height: 30px;
+	border:1px solid;
+}
+nav ul li {
+	width:15%;
+	height:30px;
+	border:1px solid;
+}
