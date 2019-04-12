@@ -2,7 +2,7 @@
 require_once("koneksidb.php");
 $sqltabel = " SELECT mata_kuliah.nama_matkul AS matkul, ruangan.nama_ruangan AS ruangan, dosen.nama AS dosen, absensi.jammasuk_absensi AS masuk, absensi.jamkeluar_absensi AS keluar, absensi.waktu_absensi AS waktu FROM `absensi` LEFT JOIN kelas ON absensi.id_kelas = kelas.id_kelas LEFT JOIN ruangan ON absensi.id_ruangan = ruangan.id_ruangan
 LEFT JOIN dosen ON absensi.id_dosen = dosen.id_dosen
-LEFT JOIN mata_kuliah ON kelas.id_matkul = mata_kuliah.id_matkul ORDER BY absensi.id_absensi DESC";
+LEFT JOIN mata_kuliah ON kelas.id_matkul = mata_kuliah.id_matkul WHERE waktu = NOW() AND CAST(Created as time) >= masuk OR CAST(Created as time) < keluar ORDER BY absensi.id_absensi DESC";
 $hasil  =mysqli_query($conn,$sqltabel);
 if(mysqli_num_rows($hasil) > 0 ){
   $response = array();  $response["data"] = array();
@@ -21,5 +21,5 @@ if(mysqli_num_rows($hasil) > 0 ){
   $response = json_encode($response);
 
 }
-
+?>
 

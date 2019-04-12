@@ -1,9 +1,5 @@
 <?php
-$dbServername="127.0.0.1";
-$dbUsername= "root";
-$dbPassword= "";
-$dbName= "adminti";
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+require_once("koneksidb.php");
 
 
 if (isset($_POST['submit'])) {
