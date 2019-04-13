@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <title>Info Kelas</title>
-    <script src="./library/aframe-master.min.js"></script>
+    <script src="./library/aframe.min.js"></script>
     <script src="./library/aframe-ar.min.js"></script>
 
 </head>
@@ -42,29 +42,38 @@
                 `<a-marker type="barcode" value="${i}">
                     <a-plane
                         rotation="-90 0 0"
-                        opacity="0">
+                        color="yellow"
+                        opacity="0.5"
+                        width="5"
+                        height="5">
+                        <a-text
+                            value="Info Kelas"
+                            position="0 2 0"
+                            color="black"
+                            align="center">
+                    </a-text>
                         <a-text 
                             value="${kelas[i]["matkul"]} | ${kelas[i]["ruangan"]}" 
-                            position="0 0 -2"
+                            position="0 1 0"
                             color="green" 
                             align="center">
                         </a-text>
                         <a-text 
                             value="${kelas[i]["dosen"]}" 
-                            position="0 0 -1"
+                            position="0 0 0"
                             color="blue" 
                             align="center">
                         </a-text>
                         <a-text 
                             value="${kelas[i]["waktu"]}" 
-                            position="0 0 0"
+                            position="0 1 0"
                             color="red" 
                             align="center">
                         </a-text>
                         <a-text 
                             value="masuk: ${kelas[i]["masuk"]} | keluar: ${kelas[i]["keluar"]}" 
-                            position="0 0 1"
-                            color="green" 
+                            position="0 2 0"
+                            color="magenta" 
                             align="center">
                         </a-text>
                     </a-plane>
