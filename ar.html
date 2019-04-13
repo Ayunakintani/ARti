@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>Info Kelas</title>
+    <script src="./library/aframe-master.min.js"></script>
+    <script src="./library/aframe-ar.min.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+
+    <a-scene embedded vr-mode-ui="enabled: false" arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+        <!-- add a simple camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+    <script>
+        // mengakses DOM scene
+        scene = document.querySelector("a-scene");
+
+        // Mengambil data JSON dari server
+        var url = './infokelas.json'; // URL dari data JSON
+        // var url = './infokelasjson.php'; // URL dari data JSON
+        fetch(url)
+            .then((resp) => resp.json()) // Mengubah text json jadi obyek (pada javascript)
+            .then(function (data) { 
+                console.log(data);
+                listInfoKelas(data["data"], scene); // membuat obyek
+            })
+            .catch(function (error) {
+                console.log(JSON.stringify(error));
+            });
+        
+        // Fungsi membuat obyek tulisan pada a-frame
+        function listInfoKelas(kelas, scenel) {
+            console.log("Generate Marker Info Kelas");
+            
+            for (let i = 0; i < kelas.length; i++) {
+                let marker = 
+                `<a-marker type="barcode" value="${i}">
+                    <a-plane
+                        rotation="-90 0 0"
+                        opacity="0">
+                        <a-text 
+                            value="${kelas[i]["matkul"]} | ${kelas[i]["ruangan"]}" 
+                            position="0 0 -2"
+                            color="green" 
+                            align="center">
+                        </a-text>
+                        <a-text 
+                            value="${kelas[i]["dosen"]}" 
+                            position="0 0 -1"
+                            color="blue" 
+                            align="center">
+                        </a-text>
+                        <a-text 
+                            value="${kelas[i]["waktu"]}" 
+                            position="0 0 0"
+                            color="red" 
+                            align="center">
+                        </a-text>
+                        <a-text 
+                            value="masuk: ${kelas[i]["masuk"]} | keluar: ${kelas[i]["keluar"]}" 
+                            position="0 0 1"
+                            color="green" 
+                            align="center">
+                        </a-text>
+                    </a-plane>
+                </a-marker>
+                `;       
+                scenel.insertAdjacentHTML('beforeend', marker);
+            }
+        }
+    </script>
+</body>
+</html>
