@@ -3,8 +3,8 @@
 
 <head>
     <title>Sistem Pemantau Jadwal Ruangan Kelas </title>
-    <script src="aframe/library/aframe.min.js"></script>
-    <script src="aframe/library/aframe-ar.js"></script>
+    <script src="./aframe/library/aframe.min.js"></script>
+    <script src="./aframe/library/aframe-ar.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
 
 </head>
@@ -56,7 +56,7 @@
             ?>
 
 
-            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 0' text-geometry='value: test; font: #exoItalicFont; style: italic; size: 0.3;  height: 0; '
+            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 0' text-geometry='value: ".$mydata->ruangan." ; font: #exoItalicFont; style: italic; size: 0.3;  height: 0; '
                  material='shader:  flat; color: crimson'"; ?>></a-entity>
 
            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='-2 0.1 0.5' text-geometry='value: ".$mydata->matkul."; font: #exoItalicFont; style: italic; size: 0.2; weight: bold; height: 0;'
