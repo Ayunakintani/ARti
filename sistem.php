@@ -32,7 +32,6 @@
 
 
                 <a-plane rotation ="-90 0 0" width="0.5" height="0.5" src="#img1"position="-1 0.1 -1"></a-plane>
-                <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img4" position="0.5 0 0 "></a-plane>
                 <a-plane rotation ="-90 0 0" width="5" height="0.5" src="#img3" position="0.5 0 0.5 "></a-plane>
                 <a-plane rotation ="-90 0 0" width="3" height="0.5" src="#img2" position="0.3 0 1 "></a-plane>
                 <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img5" position="1 0 1.5 "></a-plane>
