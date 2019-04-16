@@ -3,8 +3,8 @@
 
 <head>
     <title>Sistem Pemantau Jadwal Ruangan Kelas </title>
-    <script src="./aframe/library/aframe.min.js"></script>
-    <script src="./aframe/library/aframe-ar.js"></script>
+    <script src="./library/aframe.min.js"></script>
+    <script src="./library/aframe-ar.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
 
 </head>
