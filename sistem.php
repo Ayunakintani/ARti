@@ -32,6 +32,12 @@
 
 
                 <a-plane rotation ="-90 0 0" width="0.5" height="0.5" src="#img1"position="-1 0.1 -1"></a-plane>
+                <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img4" position="0.5 0 0 "></a-plane>
+                <a-plane rotation ="-90 0 0" width="5" height="0.5" src="#img3" position="0.5 0 0.5 "></a-plane>
+                <a-plane rotation ="-90 0 0" width="3" height="0.5" src="#img2" position="0.3 0 1 "></a-plane>
+                <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img5" position="1 0 1.5 "></a-plane>
+                <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img5" position="1 0 2 "></a-plane>
+
 
                 <a-entity align="center" rotation ="-90 0 0" position="-0.5 0.1 -1" align="center" baseline="top" text-geometry="value: Info Kelas; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;" material="shader: flat; color:white"></a-entity>
 
@@ -49,8 +55,8 @@
 
             
 
-            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 0' text-geometry='value: ".$mydata->ruangan."; font: #exoItalicFont; style: italic; size: 0.3;  height: 0; '
-                 material='shader:  flat; color: crimson'"; ?>></a-entity>
+            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 0' text-geometry='value: test; font: #exoItalicFont; style: italic; size: 0.3;  height: 0; '
+                   material='shader:  flat; color: crimson'"; ?>></a-entity>
 
            <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='-2 0.1 0.5' text-geometry='value: ".$mydata->matkul."; font: #exoItalicFont; style: italic; size: 0.2; weight: bold; height: 0;'
                   material='shader: flat; color: crimson'"; ?>></a-entity>
