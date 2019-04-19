@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/public_html/infokelas/
+    - export DEPLOYPATH=/home/haki/public_html/infokelas/
     - /bin/cp -R . $DEPLOYPATH
