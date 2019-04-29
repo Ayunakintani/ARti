@@ -208,24 +208,20 @@
                 <a-plane rotation ="-90 0 0" width="2" height="0.5" src="#img5" position="1 0 2 "></a-plane>
 
 
-            <a-entity <?php  echo "rotation='-90 0 0' position='-3.5 0 0' text-geometry='value: ".$mydata->waktu."; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
-                  material='shader: flat; color: coral'"; ?>></a-entity>
+           <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 0' text-geometry='value: ".$mydata->ruangan."; font: #exoItalicFont; style: italic; size: 0.3;  height: 0; '
+                 material='shader:  flat; color: crimson'"; ?>></a-entity>
 
-           <a-entity <?php  echo "rotation='-90 0 0' position='-3.5 0 0.5' text-geometry='value: ".$mydata->dosen."; font: #exoItalicFont; style: italic; size: 0.; weight: bold; height: 0;'
-                  material='shader: flat; color: coral'"; ?>></a-entity>
+           <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='-2 0.1 0.5' text-geometry='value: ".$mydata->matkul."; font: #exoItalicFont; style: italic; size: 0.2; weight: bold; height: 0;'
+                  material='shader: flat; color: crimson'"; ?>></a-entity>
 
-           <a-entity <?php  echo "rotation='-90 0 0' position='-3.5 0 1' text-geometry='value: ".$mydata->matkul."; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
-                  material='shader: flat; color: lightcoral'"; ?>></a-entity>
+           <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='-1 0.1 1' text-geometry='value: ".$mydata->dosen."; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
+                  material='shader: flat; color: black'"; ?>></a-entity>
 
-           <a-entity <?php  echo "rotation='-90 0 0' position='-3.5 0 1.5' text-geometry='value: ".$mydata->ruangan."; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
-                  material='shader: flat; color: lightcoral"; ?>></a-entity>
+           <a-entity <?php  echo "rotation='-90 0 0' align='center' position='0 0.1 1.5' text-geometry='value: ".$mydata->waktu."; font: #exoItalicFont; style: italic; size: 0.2; weight: bold; height: 0;'
+                  material='shader: flat; color: black'"; ?>></a-entity>
 
-           <a-entity <?php  echo "rotation='-90 0 0' position='-3.5 0 2' text-geometry='value: ".$mydata->masuk."; font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
-                  material='shader: flat; color: coral"; ?>></a-entity>
-
-            <a-entity <?php  echo "rotation='-90 0 0' position='0 0 2.5' text-geometry='value: ".$mydata->keluar.";
-             font: #exoItalicFont; style: italic; size: 0.1; weight: bold; height: 0;'
-                  material='shader: flat; color: coral"; ?>></a-entity>
+           <a-entity <?php  echo "rotation='-90 0 0'  align='center' position='0 0.1 2' text-geometry='value: ".$mydata->masuk."; font: #exoItalicFont; style: italic; size: 0.2; weight: bold; height: 0;'
+                  material='shader: flat; color: black'"; ?>></a-entity>
 
 
                     <?php } ?>
