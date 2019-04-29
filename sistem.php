@@ -174,9 +174,6 @@
                   <?php } ?>
 
             
-                    <?php } ?>
-                  <?php } ?>
-            
         </a-marker>
 
         <a-marker type='barcode' value='4'>
