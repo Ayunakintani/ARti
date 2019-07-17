@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sistem Pemantau Jadwal Ruangan Kelas </title>
+    <script src="./aframe/library/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+</head>
+
+<a-assets>  
+
+    <img id="img2" src="assets/img/unila.png">
+    <img id="img3" src="assets/img/navy.jpg">
+    <img id="img4" src="assets/img/pink.png">
+    <img id="img5" src="assets/img/pastel.png">
+    <img id="img6" src="assets/img/navy1.png">
+    <img id="img7" src="assets/img/white.png">
+    <img id="img8" src="assets/img/9.png">
+    <img id="img9" src="assets/img/10.png">
+    <img id="img10" src="assets/img/11.png">
+    <img id="img11" src="assets/img/abu.png">
+    <img id="img12" src="assets/img/red.png">
+    <img id="img13" src="assets/img/a.jpg">
+
+
+
+    <a-asset-item id="exo2BlackItalic" src="assets/fonts/exo2BlackItalic.json"></a-asset-item>
+
+</a-assets>
+
+
+
+    <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+    <a-scene vr-mode-ui="enabled: false;" >
+    
+
+                <a-plane rotation="90 0 0" position="0 3 -5">
+                <a-scene background="color:  black" rotation="90 0 0" position="0 3 -5">
+
+                
+
+                <a-plane rotation ="-90 0 0" position='1 0 3.5' width="4" height="5" src="#img7"></a-plane>
+                <a-plane rotation ="-90 0 0" position='-0.5 0 -0' width="2" height="0" src="#img12"></a-plane>
+                <a-plane rotation ="-90 0 0" position='1 0 1' width="4" height="0" src="#img3"></a-plane>
+                <a-plane rotation ="-90 0 0" position='1 0 2' width="4" height="0" src="#img3"></a-plane>
+                <a-plane rotation ="-90 0 0" position='2.75 0 2' width="2.5" height="0" src="#img12"></a-plane>
+                <a-plane rotation ="-90 0 0" position='1 0 3' width="4" height="0" src="#img3"></a-plane>
+                <a-plane rotation ="-90 0 0" position='2.5 0 5.5' width="0" height="0" src="#img13"></a-plane>
+                
+
+
+
+
+           <a-entity   rotation='-90 0 0' position='-1 0 -0' text-geometry='value: H17; style: italic; size: 0.4; weight: bold; height: 0;' material='shader: flat; color: white' ></a-entity>
+
+.5
+           <a-entity   rotation='-90 0 0' position='-0.5 0 1' text-geometry='value: Algoritma Pemrograman; style:italic; size: 0.2; weight: bold; height: 0;' material='shader: flat; color: white' ></a-entity>
+
+           <a-entity rotation='-90 0 0' position='-0.5 0 2' text-geometry='value: 02 Juli 2019; style: bold;
+           size: 0.2; weight: bold; height: 0;' material='shader: flat; color: black' ></a-entity>
+
+           <a-entity   rotation='-90 0 0' position='1.5 0 2' text-geometry='value: 10.00 - 12.10;  style: italic; 
+           size: 0.3; weight: bold; height: 0;' material='shader: flat; color: white' ></a-entity>
+
+          <a-entity   rotation='-90 0 0' position='-0.5 0 3' text-geometry='value: Meizano;  style: italic; 
+           size: 0.2; weight: bold; height: 0;' material='shader: flat; color: black' ></a-entity>
+
+          <a-entity   rotation='-90 0 0' position='0.75 0 5.5' text-geometry='value: Info Kelas;  style: italic; 
+           size: 0.2; weight: bold; height: 0;' material='shader: flat; color: black' ></a-entity>
+
+
+          </a-entity>       
+  
+    </a-plane>
+    </a-scene>
+
+</body>
+
+</html>
